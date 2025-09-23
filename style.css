@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+}
+@media (max-width: 480px){
+    #box-options{
+    padding: 2rem;
+    width: 60vw;
+    height: 20vh;
+}
+    #options{
+        flex-direction: row;
+        gap: 5%;
+    }
+    #options > ul{
+        flex-direction: column;
+    }
+    #options > ul > li > a{
+        transform: scale(0.8);
+    }
+    #options > ul > li > a:hover{
+        transform: scale(0.8);
+    }
+    #redes-sociais > a{
+        padding: 3vw;
+    }
+}
+
+main{
+    display: flex;
+    /* background-color: rgb(113, 34, 179); */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+
+#titulo-options{
+    padding: 2rem;
+}
+#page-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/img/fundo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 5rem;
+}
+
+#box-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 35vw;
+    height: 30vh;
+    box-shadow: 0px 0px 50px -20px;
+    backdrop-filter: blur(10px);
+}
+#options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10%;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#options > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+#options > ul > li > a{
+    width: 15vh;
+    height: 7vh;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    transition: 1s;
+}
+#options > ul > li > a:hover{
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#redes-sociais{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
