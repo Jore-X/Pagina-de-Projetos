@@ -1,9 +1,10 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 @media (max-width: 480px){
     #box-options{
-    padding: 2rem;
     width: 60vw;
     height: 20vh;
 }
@@ -21,24 +22,45 @@
         transform: scale(0.8);
     }
     #redes-sociais > a{
-        padding: 3vw;
+       margin: 10%;
     }
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./assets/img/fundo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 main{
     display: flex;
     /* background-color: rgb(113, 34, 179); */
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-height: 100vh;
     height: 100%;
 }
 ul{
     list-style: none;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: static;
+    bottom: 0;
+}
 
 #titulo-options{
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
+    align-items: center;
 }
 #page-options{
     display: flex;
@@ -47,16 +69,13 @@ ul{
     align-items: center;
     width: 100%;
     height: 100%;
-    background: url(./assets/img/fundo.jpg) no-repeat center center fixed;
-    background-size: cover;
-    padding: 5rem;
 }
 
 #box-options{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
     border-radius: 20px;
     width: 50%;
     min-height: 35vh;
@@ -82,6 +101,10 @@ ul{
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    height: 100%;
+}
+#options > ul > li{
+    padding: 2rem;
 }
 #options > ul > li > a{
     width: 15vh;
@@ -112,6 +135,7 @@ ul{
 #redes-sociais{
     padding: 2rem;
     display: flex;
-    justify-content: space-between;
-    width: 10%;
+    justify-content: space-around;
+    width: 30%;
+    height: 50%;
 }
