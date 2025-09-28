@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 @media (max-width: 480px){
-    #box-options{
-    width: 60vw;
-    height: 20vh;
-}
     #options{
         flex-direction: row;
         gap: 5%;
@@ -21,11 +17,9 @@
     #options > ul > li > a:hover{
         transform: scale(0.8);
     }
-    #redes-sociais > a{
-       margin: 10%;
-    }
 }
 body{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,13 +30,11 @@ body{
     background-repeat: no-repeat;
 }
 main{
+    flex: 1;
     display: flex;
     /* background-color: rgb(113, 34, 179); */
     align-items: center;
     justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
 }
 ul{
     list-style: none;
@@ -53,9 +45,7 @@ footer{
     justify-content: center;
     width: 100%;
     height: 100%;
-    position: sticky;
     bottom: 0;
-    z-index: -1;
 }
 
 #titulo-options{
@@ -65,6 +55,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    margin: 5vw;
     align-items: center;
 }
 #page-options{
@@ -72,8 +63,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 #box-options{
@@ -82,9 +71,6 @@ footer{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    width: 50%;
-    min-height: 35vh;
-    height: 50%;
     box-shadow: 0px 0px 50px -20px;
     backdrop-filter: blur(10px);
 }
@@ -95,9 +81,6 @@ footer{
     gap: 10%;
     text-align: center;
     align-items: center;
-    width: 100%;
-    min-height: 35vh;
-    height: 100%;
 }
 
 #options > ul{
@@ -105,8 +88,6 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
-    height: 100%;
 }
 #options > ul > li{
     padding: 2vh;
@@ -141,7 +122,7 @@ footer{
     backdrop-filter: blur(10px);
     border-radius: 20px 20px 0 0;
     box-shadow: 0 2vw 10vw ;
-    padding: 2vh;
+    padding: 2vw;
     display: flex;
     justify-content: space-around;
     width: 40vw;
